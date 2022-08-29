@@ -64,5 +64,5 @@ Start the Forntend
 
 ## Screenshots
 
-![App Screenshot](https://gateway.pinata.cloud/ipfs/QmXwS98y4H7F9kXhHz9314hpa4RfhM36TsirQyeXZsrcV9)
+![App Screenshot](./informationcollector-client/src//Assets/Images/Food.png)
 
