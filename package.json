@@ -8,7 +8,6 @@
     "start": "node index.js",
     "build": "cd informationcollector-client && npm install && npm run build"
   },
-  
   "engines": {
     "node": "16.13.2"
   },
@@ -24,6 +23,8 @@
   },
   "homepage": "https://github.com/king-Alex-d-great/Customer_Tracker#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.3"
   }
 }

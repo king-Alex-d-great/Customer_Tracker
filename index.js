@@ -9,13 +9,12 @@ app.use(express.json());
 
 const buildPath = path.join(__dirname,  "./informationcollector-client/build",
       );
-console.log(buildPath, "dirname")
 app.use(express.static(buildPath));
 
 app.post("/app", async (req, res) => {  
  const {details} = req.body;
  await trackRecord(details);
- console.log("REACT!!")
+ console.log("Interacting with frontend")
   res.redirect("/");
 });
 

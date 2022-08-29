@@ -4,7 +4,6 @@ const trackRecord = async (details) => {
   
   const { ip, language, isMobile, hasCookies, dimension, browser } = details;
 
-  console.log(details, "Scrren")
   fs.appendFileSync(
     "CustomersRecord.csv",
     `

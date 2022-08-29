@@ -32,11 +32,9 @@ body {
 
 .current-menu-filters-lists {
     width: 40%;
-    box-sizing: border-box;
-    /* Auto layout */
+    box-sizing: border-box;    
     align-items: center;
     padding: 4px;
-    /* Light / Beerus / 100 */
     border: 2px solid #EBEBEB;
     border-radius: 8px;
 }
@@ -109,7 +107,7 @@ body {
 
 .current-menu-foods-content-foot-price {
     font-family: 'Lato';
-    font-size: 20px;
+    font-size: 1em;
     color: #aaa6a6;
 }
 
@@ -144,3 +142,4 @@ body {
     background: #DA3743;
     border-radius: 30px;
 }
+

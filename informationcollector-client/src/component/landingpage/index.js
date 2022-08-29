@@ -3,6 +3,7 @@ import { data } from "../../Assets/data";
 import "./index.css";
 
 import Card from "../card";
+import Navbar from "../navbar";
 
 export default function LandingPage() {
   let cards = data.map((datum) => {
@@ -19,6 +20,7 @@ export default function LandingPage() {
   return (
     <>
       <section className="current-menu">
+        <Navbar />
         <div className="current-menu-text">
           <p className="current-menu-text-para">Menu</p>
         </div>
