@@ -8,13 +8,9 @@ const app = express();
 app.use(express.json());
 
 const buildPath = path.join(__dirname,  "./informationcollector-client/build",
-      "./index.html");
-console.log(__dirname, "dirname")
+      );
+console.log(buildPath, "dirname")
 app.use(express.static(buildPath));
-//app.use(express.static(path.resolve(__dirname, '')));
-// app.get("/", () =>{
-
-// });
 
 app.post("/app", async (req, res) => {  
  const {details} = req.body;
