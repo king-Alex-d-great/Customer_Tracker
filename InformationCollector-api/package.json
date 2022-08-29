@@ -1,0 +1,28 @@
+{
+  "name": "informationcollector-api",
+  "version": "1.0.0",
+  "description": "An api for an ecommerce site that collects user data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "16.13.2"
+  },
+  "keywords": [],
+  "author": "Ogubuike Alexandra",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king-Alex-d-great/Customer_Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/king-Alex-d-great/Customer_Tracker/issues"
+  },
+  "homepage": "https://github.com/king-Alex-d-great/Customer_Tracker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
