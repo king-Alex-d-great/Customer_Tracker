@@ -8,6 +8,9 @@ const app = express();
 app.use(express.json());
 
 app.use(express.static(path.resolve(__dirname, '/informationcollector-client/build')));
+app.get("/", () =>{
+
+});
 
 app.post("/app", async (req, res) => {  
  const {details} = req.body;
