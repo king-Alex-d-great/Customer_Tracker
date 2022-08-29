@@ -7,7 +7,10 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(express.json());
 
-app.use(express.static(path.resolve(__dirname, '/informationcollector-client/build')));
+const buildPath = path.join(__dirname, "..", "build");
+console.log(__dirname, "dirname")
+app.use(express.static(buildPath));
+//app.use(express.static(path.resolve(__dirname, '')));
 // app.get("/", () =>{
 
 // });
