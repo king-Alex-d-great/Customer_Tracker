@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.current-menu {     
+    padding: 0 156px;
+    width: 100%;
+}
+
+.current-menu-text {
+     
+    width: max-content;
+    margin: 29px 0 16px 0;
+}
+
+.current-menu-filters {
+    display: flex;
+    height: min-content;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.current-menu-filters-header {
+    padding: 0;
+    width: 60%;
+}
+
+.current-menu-filters-lists {
+    width: 40%;
+    box-sizing: border-box;
+    /* Auto layout */
+    align-items: center;
+    padding: 4px;
+    /* Light / Beerus / 100 */
+    border: 2px solid #EBEBEB;
+    border-radius: 8px;
+}
+
+.current-menu-filters-lists- {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    height: max-content;
+}
+
+.current-menu-filters-lists- > li {
+    align-items: center;
+    padding: 4px 8px;
+
+    border-radius: 8px;
+}
+
+.current-menu-filters-lists-All {
+    background: #DA3743;
+}
+
+.current-menu-foods {
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.foods {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 32px;
+    gap: 19px;
+    box-shadow: 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+
+    height: min-content;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.foodsimg {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.current-menu-foods-content-para {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #999999;
+    margin: 5px 0;
+}
+
+.current-menu-foods-content-foot {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-menu-foods-content-foot-price {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #aaa6a6;
+}
+
+.current-menu-foods-content-foot-button {
+
+    justify-content: center;
+    align-items: center;
+    padding: 2px 19px;
+    border: none;
+    height: 54px;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.current-menu-foods-content-foot-button:hover {
+
+    background: orange;
+    color: #272222;
+}
+
+.current-menu-footer {
+    display: flex;
+    justify-content: center;
+    padding: 53px 102px;
+}
+
+.current-menu-footer-button {
+    padding: 20px 24px;
+    border: none;
+    background: #DA3743;
+    border-radius: 30px;
+}

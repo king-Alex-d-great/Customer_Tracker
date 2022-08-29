@@ -8,6 +8,7 @@
     "start": "node index.js",
     "build": "cd informationcollector-client && npm install && npm run build"
   },
+  
   "engines": {
     "node": "16.13.2"
   },

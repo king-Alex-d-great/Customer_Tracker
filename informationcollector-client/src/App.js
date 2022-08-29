@@ -1,29 +1,25 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react";
+import axios from "axios";
+import LandingPage from "./component/landingpage";
+import Navbar from "./component/navbar";
+import collate from "./Utils/collator";
 
 function App() {
+  useEffect(() => {
+    let call = async () => {
+      let details = await collate();
+      let {screen} = details;
+      details.dimension = `${screen.availWidth} x ${screen.availHeight}`;      
+      axios.post(`/app`, { details });
+    };
 
-   useEffect(() => {
-     fetch("/")
-       .then((res) => res.json())
-       //.then((data) => setData(data.message));
-   }, []);
+    call();
+  }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={""} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <LandingPage />
     </div>
   );
 }
