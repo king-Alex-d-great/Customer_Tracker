@@ -4,7 +4,7 @@
   "description": "An api for an ecommerce site that collects user data.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test",
     "start": "node server/index.js",
     "build": "cd informationcollector-client && npm install && npm run build"
   },
