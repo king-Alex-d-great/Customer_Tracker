@@ -7,7 +7,8 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(express.json());
 
-const buildPath = path.join(__dirname, "..", "build");
+const buildPath = path.join(__dirname,  "./informationcollector-client/build",
+      "./index.html");
 console.log(__dirname, "dirname")
 app.use(express.static(buildPath));
 //app.use(express.static(path.resolve(__dirname, '')));
@@ -26,7 +27,7 @@ app.get('*', (req, res) => {
   res.sendFile(
     path.resolve(
       __dirname,
-      "../../informationcollector-client/build",
+      "./informationcollector-client/build",
       "./index.html"
     )
   );
