@@ -3,7 +3,7 @@ import React, {useEffect} from "react"
 function App() {
 
    useEffect(() => {
-     fetch("/api")
+     fetch("/")
        .then((res) => res.json())
        //.then((data) => setData(data.message));
    }, []);

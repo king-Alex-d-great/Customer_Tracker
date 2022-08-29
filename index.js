@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.static(path.resolve(__dirname, '../../informationcollector-client/build')));
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
